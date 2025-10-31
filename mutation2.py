@@ -62,23 +62,4 @@ print("Details of  changes: ")
 for idx, c1, c2, aa1, aa2, kind in change_list:
         print(f"Codon #{idx}: {c1} → {c2} ; {aa1} → {aa2} : {kind}")
         
-#BAR CHART(SYNONYMOUS AND NON-SYNONYMOUS COUNTS)    
-labels = ['Synonymous', 'Non-synonymous']
-counts = [syn_count, nonsyn_count]
-
-plt.bar(labels, counts, colour=['blue' 'red'])
-plt.title('SYNONYMOUS vs NON-SYNONYMOUS MUTATIONS')
-plt.ylabel('Count')
-plt.xlabel('Mutation type')
-plt.show()
-
-
-
-
-        
-        
-        
-    
-        
-        
-        
+#PIE CHART(PROPORTION OF MUTATION TYPES)
