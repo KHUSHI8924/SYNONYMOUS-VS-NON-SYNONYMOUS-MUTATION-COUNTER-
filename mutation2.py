@@ -63,3 +63,17 @@ for idx, c1, c2, aa1, aa2, kind in change_list:
         print(f"Codon #{idx}: {c1} → {c2} ; {aa1} → {aa2} : {kind}")
         
 #PIE CHART(PROPORTION OF MUTATION TYPES)
+labels = ['Synonymous', 'Non-synonymous']
+counts = [syn_count, nonsyn_count]
+colors = ['lightgreen', 'lightcoral']
+
+plt.pie(counts, labels=labels, autopct='%1.1f%%', colors=colors, startangle=90)
+plt.title("Proportion of Synonymous vs Non-Synonymous Mutations")
+plt.show()
+
+
+
+
+
+
+
